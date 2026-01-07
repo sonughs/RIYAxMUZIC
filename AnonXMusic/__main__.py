@@ -2,13 +2,6 @@ import asyncio
 import importlib
 import sys
 
-# Setup uvloop for better async performance (Linux/macOS only)
-try:
-    import uvloop
-    uvloop.install()
-except ImportError:
-    pass
-
 from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
