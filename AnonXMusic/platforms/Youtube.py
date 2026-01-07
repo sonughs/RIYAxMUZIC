@@ -71,7 +71,7 @@ import os
 import requests
 
 def api_dl(video_id: str) -> str:
-    api_url = f"{API_URL}/arytmp3?direct&id={video_id}"
+    api_url = f"{API_URL}/yt?id={video_id}&format=mp3&direct"
     file_path = os.path.join("downloads", f"{video_id}.mp3")
 
     # Check if file already exists
