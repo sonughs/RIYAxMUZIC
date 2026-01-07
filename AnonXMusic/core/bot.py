@@ -1,3 +1,9 @@
+# uvloop for faster event loop performance
+import asyncio
+import uvloop
+asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
+asyncio.set_event_loop(asyncio.new_event_loop())
+
 from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus, ParseMode
 
